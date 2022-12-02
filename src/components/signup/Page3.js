@@ -9,9 +9,6 @@ const Page3 = () => {
       <label htmlFor="">
         <input
           onChange={(e) => {
-            if (e.target.value.length < 8) {
-              return alert(" Your password must be 8 characters");
-            }
             setPassword(e.target.value);
           }}
           value={password}
