@@ -20,7 +20,7 @@ const Signup = () => {
     signup(email, password)
       .then((result) => {
         const user = result.user;
-        console.log(user);
+        // console.log(user);
         updateUserProfile(fullName).then(() => {
           const currentUser = {
             firstName: firstName,
