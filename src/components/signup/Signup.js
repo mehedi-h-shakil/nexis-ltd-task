@@ -73,12 +73,15 @@ const Signup = () => {
                 </label>
               )}
               {page === 3 ? (
-                <button className="btn btn-primary" onClick={handleSignup}>
+                <button
+                  className="btn btn-primary bg-[#1678CB] hover:bg-[#1678CB]"
+                  onClick={handleSignup}
+                >
                   Sign Up
                 </button>
               ) : (
                 <button
-                  className="btn btn-primary"
+                  className="btn btn-primary bg-[#1678CB] px-5 hover:bg-[#1678CB]"
                   onClick={() => {
                     const nextPage = page + 1;
                     setPage(nextPage);
@@ -94,9 +97,9 @@ const Signup = () => {
             {page === 1 && (
               <div className="mt-24 text-right mr-16">
                 <p>
-                  <span className="text-sm mr-2">Don't have an account?</span>
-                  <span className="text-blue-500 font-semibold underline">
-                    <Link to="/login">SIGNUP HERE</Link>
+                  <span className="text-sm mr-2">Already have an account?</span>
+                  <span className="text-[#1678CB] font-semibold underline">
+                    <Link to="/login">LOGIN HERE</Link>
                   </span>
                 </p>
               </div>
