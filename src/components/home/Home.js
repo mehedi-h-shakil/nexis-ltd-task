@@ -19,7 +19,7 @@ const Home = () => {
     axios
       .get("https://test.nexisltd.com/test/test", {
         headers: {
-          authorization: `Bearer ${process.env.jwtToken}`,
+          authorization: `Bearer ${localStorage.getItem("token")}`,
         },
       })
       .then(function (res) {
