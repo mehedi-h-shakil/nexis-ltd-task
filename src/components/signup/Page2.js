@@ -12,7 +12,7 @@ const Page2 = () => {
           name="countryCode"
           disabled
           placeholder="+880"
-          className="border-b-2 outline-0 text-center w-[90px] mr-1 mb-20"
+          className="border-b-2 outline-0 text-center w-[70px] mr-1 mb-20"
         />
       </label>
       <label htmlFor="">
@@ -25,7 +25,7 @@ const Page2 = () => {
           name="mobileNumber"
           required
           placeholder="Write Your Number"
-          className="border-b-2 outline-0 w-[300px] lg:w-[370px] mb-20"
+          className="border-b-2 outline-0 w-[230px] lg:w-[300px] mb-20"
         />
       </label>
       <label htmlFor="">

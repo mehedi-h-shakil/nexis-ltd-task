@@ -7,6 +7,7 @@ import logo from "../../assets/logo.png";
 import { FormContext } from "../../contexts/FormProvider";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthProvider";
+import { BsArrowRight } from "react-icons/bs";
 
 const Signup = () => {
   const { signup, updateUserProfile } = useContext(AuthContext);
@@ -83,7 +84,10 @@ const Signup = () => {
                     setPage(nextPage);
                   }}
                 >
-                  Next Step
+                  Next Step{" "}
+                  <span className="ml-3">
+                    <BsArrowRight />
+                  </span>
                 </button>
               )}
             </div>
