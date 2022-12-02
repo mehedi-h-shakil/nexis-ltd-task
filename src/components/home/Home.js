@@ -17,7 +17,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/test", {
+      .get("https://test.nexisltd.com/test/test", {
         headers: {
           authorization: `Bearer ${process.env.jwtToken}`,
         },
